@@ -126,5 +126,126 @@ header {
 
 .button1:hover {
     transform: scale(1.05);
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #f44336;
 }
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+#section2 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#section2 p {
+     font-size: 1rem;
+     font-weight: 300;
+    line-height: 1.6;
+    color: black;   /* slightly lighter color for better readability */
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 130px;
+}
+
+.cards div {
+    margin-top: 50px;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    background-color: #fff3f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;  /* add this */
+}
+ 
+
+.cards div:hover{
+    transform: scale(1.05) translateZ(0);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);}
+
+.cards2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 130px;
+    margin-top: 50px;
+}
+
+/* uniform sizing + shrink images a bit */
+.cards2 div {
+    position: relative;
+    width: 350px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.cards2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* red tint overlay, hidden by default */
+.cards2 div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(220, 60, 50, 0.55);
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    z-index: 1;
+}
+
+.cards2 div:hover::before {
+    opacity: 1;
+}
+
+/* the text label, starts below center and hidden */
+.cards2 div::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    opacity: 0;
+    transform: translate(-50%, calc(-50% + 25px));
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 2;
+}
+
+.cards2 div:hover::after {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
+
+/* the actual text per card */
+.card4::after { content: "New York"; }
+.card5::after { content: "London"; }
+.card6::after { content: "Washington"; }
