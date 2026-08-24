@@ -1,6 +1,6 @@
 
 #top-section {
-    background-image: url('eduford_img/banner.png');
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url('eduford_img/banner.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
@@ -10,6 +10,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav {
+    padding: 2% 6%;
+    
 }
 
 header {
