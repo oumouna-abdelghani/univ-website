@@ -1,0 +1,84 @@
+
+#top-section {
+    background-image: url('eduford_img/banner.png');
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+* {  /* Reset default styles */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+#nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+     position: relative;
+}
+
+#nav-bar a::after {
+   content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: orange;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    
+}
+#nav-bar a:hover::after {
+    width: 100%;
+}
+
+#hero {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+}
+
+#hero h1 {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    color: #fff;
+    max-width: 600px;
+    margin-bottom: 40px;
+}
+
+.button1 {
+    background-color: orange;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
