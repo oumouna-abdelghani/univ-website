@@ -190,7 +190,7 @@ header {
     justify-content: center;
     align-items: center;
     gap: 35px;
-    margin-bottom: 130px;
+    margin-bottom: 60px;
     margin-top: 50px;
 }
 
@@ -249,3 +249,215 @@ header {
 .card4::after { content: "New York"; }
 .card5::after { content: "London"; }
 .card6::after { content: "Washington"; }
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.cards3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 85px;
+    margin-bottom: 26px;
+    margin-top: 60px;
+}
+
+#section3 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#section3 p {
+     font-size: 1rem;
+     font-weight: 300;
+    line-height: 1.6;
+    color: black;   /* slightly lighter color for better readability */
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#section3 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+    
+}
+
+.cards3 div {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
+}
+
+.cards3 div {
+    position: relative;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.cards3 img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 20px;
+    border-radius: 13px;
+}
+
+#section4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.cards4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 55px;
+    margin-bottom: 130px;
+}
+
+.cards44 {
+    margin-top: 40px;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
+    gap: 50px;
+    background-color: #fff3f2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+     transition: transform 0.3s ease, box-shadow 0.3s ease;  /* add this */
+}
+
+.cards44 img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    display: block;
+    border-radius: 50%;
+
+}
+
+#section4 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#section4 p {
+     font-size: 1rem;
+     font-weight: 300;
+    line-height: 1.6;
+    color: black;   /* slightly lighter color for better readability */
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#section4 h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+    
+}
+
+.rating {
+    color: #f44336;
+    font-size: 1.1rem;
+    font-weight: 900;
+    font-family: "Arial", sans-serif;
+    letter-spacing: 2px;
+    
+}
+
+#section5 {
+      background-image: linear-gradient(rgba(10, 10, 14, 0.75), rgba(10, 10, 14, 0.75)), url('eduford_img/banner2.jpg');
+      background-size: cover;
+       background-position: center;
+      height: 400px;
+      width: 80%;
+      margin: 0 auto;
+      display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     margin-bottom: 100px;
+     border-radius: 13px;
+}
+
+#section5 h1 {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-align: center;
+        max-width: 900px;     /* keeps the two-line wrap like the reference */
+        margin-bottom: 45px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.icons .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+
+
+#about p {
+     font-size: 1rem;
+     font-weight: 300;
+    line-height: 1.6;
+    color: black;   /* slightly lighter color for better readability */
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+#about h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #333;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
